@@ -1,0 +1,1 @@
+At HotBeans, we are passionate about creating web solutions that are innovative, reliable, and user-focused. Our journey is driven by our commitment to excellence and the ambition to empower businesses worldwide through cutting-edge technology.
