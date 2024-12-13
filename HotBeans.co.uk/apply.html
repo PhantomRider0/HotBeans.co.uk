@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply/Register</title>
+    <link href="C:\Users\70264877\OneDrive - London South East Colleges\IT Level 3\HotBeans.co.uk\CSS\style.css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="HotBeans.co.uk Logo">
+            <h1>HotBeans.co.uk</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+				<li><a href="employees.html">Employees</a></li>
+				<li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="apply.html" class="active">Apply/Register</a></li>
+				<li><a href="vacancy.html">Vacancy</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+<br>
+</br>
+    <section id="apply-register">
+        <h2>Apply or Register Today</h2>
+        <p>
+			Join our team and take the next step in your career. Complete your application below to get started.
+        </p>
+
+        <!-- Apply for Position -->
+        <div class="form-section">
+            <h4>Apply for a Position</h4>
+            <form action="submit-application.php" method="POST">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="position">Position Interested In:</label>
+                <select id="position" name="position" required>
+                    <option value="" disabled selected>Select a position</option>
+                    <option value="Front-End Developer">Front-End Developer</option>
+                    <option value="Back-End Developer">Back-End Developer</option>
+                    <option value="Full-Stack Developer">Full-Stack Developer</option>
+                    <option value="UI/UX Designer">UI/UX Designer</option>
+					<option value="Web Designer">Web Designer</option>
+                </select>
+
+                <label for="resume">Upload Your CV/Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+
+                <label for="cover-letter">Cover Letter:</label>
+                <textarea id="cover-letter" name="cover-letter" rows="5" placeholder="Write your cover letter" required></textarea>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+
+        <!-- Register for a Course -->
+        <div class="form-section">
+            <h4>Register for a Course</h4>
+            <form action="submit-course-registration.php" method="POST">
+                <label for="full-name-course">Full Name:</label>
+                <input type="text" id="full-name-course" name="full-name" placeholder="Enter your full name" required>
+
+                <label for="email-course">Email Address:</label>
+                <input type="email" id="email-course" name="email" placeholder="Enter your email" required>
+
+                <label for="course">Course Interested In:</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="Front-End Developer Course">Front-End Developer Course</option>
+                    <option value="Back-End Developer Course">Back-End Developer Course</option>
+                    <option value="Full-Stack Developer Course">Full-Stack Developer Course</option>
+                    <option value="UI/UX Designer Course">UI/UX Designer Course</option>
+					<option value="Web Development">Web Development Course</option>
+					<option value="Data Science">Data Science Course</option>
+                </select>
+
+                <label for="message">Additional Information (Optional):</label>
+                <textarea id="message" name="message" rows="5" placeholder="Let us know any special requirements"></textarea>
+
+                <button type="submit">Register for Course</button>
+            </form>
+        </div>
+
+        <!-- Inquiry Form -->
+        <div class="form-section">
+            <h4>Make an Inquiry</h4>
+            <form action="submit-inquiry.php" method="POST">
+                <label for="name-inquiry">Full Name:</label>
+                <input type="text" id="name-inquiry" name="full-name" placeholder="Enter your full name" required>
+
+                <label for="email-inquiry">Email Address:</label>
+                <input type="email" id="email-inquiry" name="email" placeholder="Enter your email" required>
+
+                <label for="message-inquiry">Your Message:</label>
+                <textarea id="message-inquiry" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </div>
+    </section>
+	
+	<div>
+        <!-- Additional Information -->
+        <div class="info-section">
+            <h2>Why Choose HotBeans?</h2>
+            <p>We offer hands-on, industry-relevant training to prepare you for real-world challenges. Our experienced instructors and state-of-the-art resources ensure you achieve your goals.</p>
+            <a href="courses.html">Explore Our Courses</a>
+        </div>
+    </div>
+<br>
+</br>
+	<footer>
+        <p>© 2024 HotBeans.co.uk. All rights reserved.</p>
+    </footer>
+</body>
+</html>
